@@ -22,11 +22,11 @@
 <body id="body" style="background-color: rgba(185, 183, 183, 0.548);">
     <div id="back-all" class="back-all">
         <div id="logo" class="align-center">
-            <img id="img-cruz" src="./Assinatura Digital_files/cruz-png.png"> <img id="img-dtic" class="img-fluid" src="./Assinatura Digital_files/logo_fundo-transp.png"> <img id="img-sp" class="img-fluid" src="./Assinatura Digital_files/spt3.jpg"> 
+            <img id="img-cruz" src="./Assinatura Digital_files/Logo Qualidade.png"> <img id="img-dtic" class="img-fluid" src="./Assinatura Digital_files/Logo HSPM.png"> <img id="img-sp" class="img-fluid" src="./Assinatura Digital_files/Logo Saude.png"> 
         </div>
         <hr>
         <div id="corporation">
-            <span id="name"> SMS GABINETE </span> 
+            <span id="name"> Assessoria de Comunicação </span> 
             
             <span id="sub-name"> Gerador de Assinaturas </span> 
         </div>
@@ -75,6 +75,11 @@
             </div>
             <div id="row-input">
                 <div class="col-sm">
+                    <input type="text" class="form-control" id="bairroinput" maxlength="30" placeholder="Bairro">
+                </div>
+            </div>
+            <div id="row-input">
+                <div class="col-sm">
                     <input type="text" class="form-control" id="cidadeinput" maxlength="30" placeholder="Cidade">
                 </div>
             </div>
@@ -105,7 +110,7 @@
                             <span class="dados">
                                 <span id="emailass">E-mail</span>
                                 <p>Tel.: <span id="telass">(xx) xxxx-xxxx</span></p> 
-                                <p> <span id="endass">Endereço</span> <span id="compass"></span> <br> <span id="cepass">Cep</span> | <span id="cidadeass">São Paulo</span> | <span id="estadoass">SP</span></p>
+                                <p> <span id="endass">Endereço</span> <span id="compass"></span> <br> <span id="cepass">Cep</span> | <span id="bairroass">Bairro</span> | <span id="cidadeass">São Paulo</span> | <span id="estadoass">SP</span></p>
                                 <p>www.hspm.sp.gov.br</p>
                                 <script>                                    dynamictext(); </script>
                             </span>

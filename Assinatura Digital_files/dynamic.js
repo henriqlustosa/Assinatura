@@ -1,4 +1,4 @@
-function dynamictext(){
+function dynamictext() {
 	document.getElementById('nomeass').innerHTML = "Nome do Profissional";
 	document.getElementById('cargoass').innerHTML = "Cargo";
 	document.getElementById('setorass').innerHTML = "Setor";
@@ -7,38 +7,42 @@ function dynamictext(){
 	document.getElementById('endass').innerHTML = "Endereço";
 	document.getElementById('compass').innerHTML = "";
 	document.getElementById('cepass').innerHTML = "Cep";
+	document.getElementById('bairroass').innerHTML = "Bairro";
 	document.getElementById('cidadeass').innerHTML = "São Paulo";
 	document.getElementById('estadoass').innerHTML = "SP";
 
 
-	document.getElementById('nomeinput').addEventListener('input', function(e){
+	document.getElementById('nomeinput').addEventListener('input', function (e) {
 		document.getElementById('nomeass').innerHTML = e.target.value.toUpperCase();
 	});
 
-	document.getElementById('cargoinput').addEventListener('input', function(e){
+	document.getElementById('cargoinput').addEventListener('input', function (e) {
 		document.getElementById('cargoass').innerHTML = e.target.value.toUpperCase();
 	});
 
-	document.getElementById('setorinput').addEventListener('input', function(e){
+	document.getElementById('setorinput').addEventListener('input', function (e) {
 		document.getElementById('setorass').innerHTML = e.target.value.toUpperCase();
 	});
 
-	document.getElementById('emailinput').addEventListener('input', function(e){
+	document.getElementById('emailinput').addEventListener('input', function (e) {
 		document.getElementById('emailass').innerHTML = e.target.value.toLowerCase();
 	});
 
-	document.getElementById('endinput').addEventListener('input', function(e){
+	document.getElementById('endinput').addEventListener('input', function (e) {
 		document.getElementById('endass').innerHTML = e.target.value;
 	})
 
-	document.getElementById('compinput').addEventListener('input', function(e){
-		if(e.target.value.length > 0){
+	document.getElementById('compinput').addEventListener('input', function (e) {
+		if (e.target.value.length > 0) {
 			document.getElementById('compass').innerHTML = " | " + e.target.value;
 		}
 		else document.getElementById('compass').innerHTML = "";
 	})
-
-	document.getElementById('cidadeinput').addEventListener('input', function(e){
+	document.getElementById('bairroinput').addEventListener('input', function (e) {
+		document.getElementById('bairroass').innerHTML = e.target.value;
+	})
+	document.getElementById('cidadeinput').addEventListener('input', function (e) {
+		
 		document.getElementById('cidadeass').innerHTML = e.target.value;
 	})
 
@@ -100,6 +104,7 @@ function apagar(){
 	document.getElementById('phone1').value = '';
 	document.getElementById('endinput').value = '';
 	document.getElementById('compinput').value = '';
+	document.getElementById('bairroinput').value = '';
 	document.getElementById('cidadeinput').value = '';
 	document.getElementById('estadoinput').value = '';
 	document.getElementById('cepinput').value = '';
@@ -114,6 +119,7 @@ function apagar(){
 	document.getElementById('endass').innerHTML = "Endereço";
 	document.getElementById('compass').innerHTML = "";
 	document.getElementById('cepass').innerHTML = "Cep";
+	document.getElementById('bairroass').innerHTML = "Bairro";
 	document.getElementById('cidadeass').innerHTML = "São Paulo";
 	document.getElementById('estadoass').innerHTML = "SP";
 
