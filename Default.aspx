@@ -94,7 +94,7 @@
                     <div id="down-img" class="content down-img">
                         <div class="col-assinatura">
                             <p class="img" id="logo-assinatura">
-                                <img id="logoassinatura" src="./Assinatura Digital_files/spt9.png">
+                                <img id="logoassinatura" src="./Assinatura Digital_files/Logos assinatura.png">
                             </p> 
                         </div>
                         <div class="col-dados-prof">
